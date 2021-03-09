@@ -19,9 +19,9 @@ public class Home extends JPanel {
 		setSize(1000, 1200);
 		setBackground(Color.white);
 		
-		ImageIcon img=new ImageIcon("C:/Users/USER/Desktop/Ãë¼ºÆÐ/ÆÀÇÁ·ÎÁ§Æ® »çÁø/°øÂ÷.png");
+		ImageIcon img=new ImageIcon("img/ê³µì°¨.png");
 		JLabel label=new JLabel(img);
-		JButton button=new JButton("ÁÖ¹®ÇÏ±â");
+		JButton button=new JButton("ì£¼ë¬¸í•˜ê¸°");
 		
 		Font font=new Font("Bernard MT", Font.BOLD, 20);
 		

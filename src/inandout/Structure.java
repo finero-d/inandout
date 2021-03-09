@@ -6,7 +6,7 @@ import javax.swing.JPanel;
 public class Structure extends JFrame {
 	private static Structure instance;
 	private Structure(JPanel e) {
-		setTitle("1ÆÀ ÇÁ·ÎÁ§Æ®");
+		setTitle("1íŒ€ í”„ë¡œì íŠ¸");
 		setLayout(null);
 		setSize(1000, 1200);
 		

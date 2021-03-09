@@ -1,6 +1,7 @@
 package inandout;
 import inandout.Structure;
 import inandout.Home;
+import inandout.Milktea;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
@@ -58,19 +59,19 @@ public class MenuSelect extends JPanel{
 		Font fonts=new Font("Bernard MT", Font.BOLD, 20);
 	
 		JLabel lbs[]=new JLabel[2];
-		String messege_lb[]= {"ÁÖ¹®ÇÏ·Á¸é ¸Ş´º¸¦ Å¬¸¯ÇØ ÁÖ¼¼¿ä","Àå¹Ù±¸´Ï"};
+		String messege_lb[]= {"ì£¼ë¬¸í•˜ì‹¤ ë§¤ë‰´ë¥¼ ì„ íƒí•´ì£¼ì„¸ìš”","ì¥ë°”êµ¬ë‹ˆ"};
 		for(int i=0;i<lbs.length;i++) {
 			lbs[i]=new JLabel(messege_lb[i]);
 			lbs[i].setForeground(Color.white);
 		}	
 		
-		ImageIcon img_home=new ImageIcon("C:/Users/USER/Desktop/Ãë¼ºÆĞ/ÆÀÇÁ·ÎÁ§Æ® »çÁø/È¨¹öÆ°.png");
-		ImageIcon img_order=new ImageIcon("C:/Users/USER/Desktop/Ãë¼ºÆĞ/ÆÀÇÁ·ÎÁ§Æ® »çÁø/Àå¹Ù±¸´Ï.jpg");
+		ImageIcon img_home=new ImageIcon("img/í™ˆë²„íŠ¼.png");
+		ImageIcon img_order=new ImageIcon("img/ì¥ë°”êµ¬ë‹ˆ.jpg");
 		JLabel Menubar_lbs_img=new JLabel(img_home);
 		JLabel Orderbag_lbs_img=new JLabel(img_order);
 		
 		JButton buttons[]=new JButton[5];
-		String name_bt[]= {"½ÃÀÛÈ­¸é","¹ĞÅ©Æ¼","½º¹«µğ","°áÁ¦ÇÏ±â", "ÀüÃ¼»èÁ¦"};
+		String name_bt[]= {"í™ˆí™”ë©´","ë°€í¬í‹°","ìŠ¤ë¬´ë””","ì£¼ë¬¸í•˜ê¸°", "ê²°ì œì·¨ì†Œ"};
 		for(int i=0;i<buttons.length;i++) {
 			buttons[i]=new JButton(name_bt[i]);
 			buttons[i].setFont(font);
@@ -115,7 +116,7 @@ public class MenuSelect extends JPanel{
 			Menubar.add(buttons[i]);
 		}
 		
-		/*Select.add(); ¹ĞÅ©Æ¼ Å¬·¡½º Ãß°¡*/
+		Select.add(new Milktea());
 		
 		Orderbag.add(Orderbag_lbs_img);
 		Orderbag.add(lbs[1]);
@@ -134,17 +135,17 @@ public class MenuSelect extends JPanel{
 		
 		buttons[1].addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				/*Select.removeAll();
-				Select.add(); ¹ĞÅ©Æ¼ Å¬·¡½º Ãß°¡
+				Select.removeAll();
+				Select.add(new Milktea()); //ë°€í¬í‹°
 				Select.revalidate();
-				Select.repaint();*/			
+				Select.repaint();			
 			}
 		});
 		
 		buttons[2].addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				/*Select.removeAll();
-				Select.add(); ½º¹«µğ Å¬·¡½º Ãß°¡
+				Select.add(); //ìŠ¤ë¬´ë””
 				Select.revalidate();
 				Select.repaint();*/
 			}
@@ -153,10 +154,10 @@ public class MenuSelect extends JPanel{
 		buttons[3].addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				int r=JOptionPane.showConfirmDialog 
-					(null,"ÁÖ¹®À» °è¼ÓÇÏ½Ã°Ú½À´Ï±î?","È®ÀÎ", JOptionPane.YES_NO_OPTION);
+					(null,"ì„ íƒí•œ ë§¤ë‰´ë¡œ ê²°ì œë¥¼ ì§„í–‰í•˜ì‹œê² ìŠµê¹Œ?","ì•Œë¦¼", JOptionPane.YES_NO_OPTION);
 				 /*if(r==JOptionPane.YES_OPTION) {
-					 Structure.getter(new °áÁ¦ÇÏ±â());
-				 }*/ //Áö¼±¾¾ ºÎºĞ			
+					 Structure.getter();
+				 }*/			
 			}
 		});
 		
@@ -164,7 +165,7 @@ public class MenuSelect extends JPanel{
 			public void actionPerformed(ActionEvent e) {
 				Orderlist_ta.setText("");
 				JOptionPane.showMessageDialog
-			    (null, "¼±ÅÃÇÏ½Å ÁÖ¹®ÀÌ Ãë¼ÒµÆ½À´Ï´Ù.", "¾Ë¸²", JOptionPane.INFORMATION_MESSAGE);
+			    (null, "ì£¼ë¬¸ì´ ì·¨ì†ŒëìŠµë‹ˆë‹¤", "ì•Œë¦¼", JOptionPane.INFORMATION_MESSAGE);
 			}
 		});
 		
