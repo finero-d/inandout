@@ -20,6 +20,8 @@ import javax.swing.JPanel;
 import javax.swing.JTextArea;
 
 public class MenuSelect extends JPanel{
+	
+	static TextArea Orderlist_ta=new TextArea(10,20);
 	MenuSelect(){
 		setSize(1000, 1200);
 		setLayout(null);
@@ -79,7 +81,6 @@ public class MenuSelect extends JPanel{
 			buttons[i].setBorderPainted(false);
 		}
 		
-		TextArea Orderlist_ta=new TextArea(10,20);
 		Orderlist_ta.setFont(fonts);
 				
 		lbs[0].setBounds(100, 0, 500, 100);

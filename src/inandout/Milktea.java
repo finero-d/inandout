@@ -1,9 +1,14 @@
 package inandout;
 
+import inandout.Option;
+
 import java.awt.Color;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
+import javax.swing.JFrame;
 import javax.swing.JPanel;
 
 public class Milktea extends JPanel{
@@ -41,7 +46,14 @@ public class Milktea extends JPanel{
 		      jasmin.setIcon(new ImageIcon("img/jasmin2.jpg"));
 		      add(jasmin);
 		      jasmin.setBounds(350, 666, 200, 250);
-				   
+		      
+		      black.addActionListener(new ActionListener() {
+				public void actionPerformed(ActionEvent e) {
+					new Option();
+					
+				}
+			});
+		      
 		   }
 		
 

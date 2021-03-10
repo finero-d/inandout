@@ -39,7 +39,7 @@ public class Home extends JPanel {
 		
 		button.addActionListener(new ActionListener() { 
 			public void actionPerformed(ActionEvent e) {
-				Structure.getter(new MenuSelect());				
+				Structure.getter(new MenuSelect());	
 			}
 		});
 	}
