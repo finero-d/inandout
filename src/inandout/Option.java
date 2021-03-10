@@ -63,7 +63,8 @@ public class Option extends JFrame{
 	      iname[18].setForeground(Color.blue);
 	      
 	      
-	      JLabel lb1=new JLabel("밀크티");
+	      JLabel lb1=new JLabel(Milktea.menu);
+	      JLabel lb6=new JLabel(Smoothie.menu);
 	      JLabel lb2=new JLabel("COLD/HOT");
 	      JLabel lb3=new JLabel("얼음");
 	      JLabel lb4=new JLabel("당도");

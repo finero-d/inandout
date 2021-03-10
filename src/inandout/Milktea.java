@@ -12,6 +12,7 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 
 public class Milktea extends JPanel{
+	public static String menu = null;
 	Milktea(){
 		setLayout(null);
 		setBackground(Color.white);
@@ -24,6 +25,7 @@ public class Milktea extends JPanel{
 		black.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 		    	new Option();
+		    	menu = "black";
 		    }
 		});
 		      
@@ -34,6 +36,7 @@ public class Milktea extends JPanel{
 		taro.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				new Option();
+				menu = "taro";
 		    }
 		});
 		      
@@ -44,6 +47,7 @@ public class Milktea extends JPanel{
 		oolong.addActionListener(new ActionListener() {
 		    public void actionPerformed(ActionEvent e) {
 		    	new Option();
+		    	menu = "oolong";
 		    }
 		});
 		      
@@ -54,6 +58,7 @@ public class Milktea extends JPanel{
 		berry.addActionListener(new ActionListener() {
 		    public void actionPerformed(ActionEvent e) {
 		    	new Option();	  
+		    	menu = "berry";
 		    }
 		});
 		      
@@ -64,6 +69,7 @@ public class Milktea extends JPanel{
 		earlgrey.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				new Option();	  
+				menu = "earlgrey";
 			}
 		});
 		      
@@ -74,6 +80,7 @@ public class Milktea extends JPanel{
 		jasmin.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				new Option();	  
+				menu = "jasmin";
 			}
 		});
 	}

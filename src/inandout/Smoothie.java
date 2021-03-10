@@ -8,6 +8,7 @@ import javax.swing.JButton;
 import javax.swing.JPanel;
 
 public class Smoothie extends JPanel{
+	public static String menu = null;
    Smoothie(){
 	      
 	   setLayout(null);
@@ -19,6 +20,7 @@ public class Smoothie extends JPanel{
 	   mango.addActionListener(new ActionListener() {
 		   public void actionPerformed(ActionEvent e) {
 			   new Option();
+			   menu = "mango";
 		   }
 	   });
 	      
@@ -29,6 +31,7 @@ public class Smoothie extends JPanel{
 	   grape.addActionListener(new ActionListener() {
 		   public void actionPerformed(ActionEvent e) {
 			   new Option();
+			   menu = "grape";
 		   }
 	   });
 	      
@@ -39,6 +42,7 @@ public class Smoothie extends JPanel{
 	   greentea.addActionListener(new ActionListener() {
 		   public void actionPerformed(ActionEvent e) {
 			   new Option();
+			   menu = "greentea";
 		   }
 	   });
 	      
@@ -49,6 +53,7 @@ public class Smoothie extends JPanel{
 	   cheese.addActionListener(new ActionListener() {
 		   public void actionPerformed(ActionEvent e) {
 			   new Option();
+			   menu = "cheese";
 		   }
 	   });
 	      
@@ -59,6 +64,7 @@ public class Smoothie extends JPanel{
 	   yogurt.addActionListener(new ActionListener() {
 		   public void actionPerformed(ActionEvent e) {
 			   new Option();
+			   menu = "yogurt";
 		   }
 	   });
 	      
@@ -69,6 +75,7 @@ public class Smoothie extends JPanel{
 	   cookie.addActionListener(new ActionListener() {
 		   public void actionPerformed(ActionEvent e) {
 			   new Option();
+			   menu = "cookie";
 		   }
 	   });
 	      
