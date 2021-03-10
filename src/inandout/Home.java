@@ -19,7 +19,7 @@ public class Home extends JPanel {
 		setSize(1000, 1200);
 		setBackground(Color.white);
 		
-		ImageIcon img=new ImageIcon("img/공차.png");
+		ImageIcon img=new ImageIcon("img/main.png");
 		JLabel label=new JLabel(img);
 		JButton button=new JButton("주문하기");
 		

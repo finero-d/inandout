@@ -68,8 +68,8 @@ public class MenuSelect extends JPanel{
 			lbs[i].setForeground(Color.white);
 		}	
 		
-		ImageIcon img_home=new ImageIcon("img/홈버튼.png");
-		ImageIcon img_order=new ImageIcon("img/장바구니.jpg");
+		ImageIcon img_home=new ImageIcon("img/homebutton.png");
+		ImageIcon img_order=new ImageIcon("img/orderbag.jpg");
 		JLabel Menubar_lbs_img=new JLabel(img_home);
 		JLabel Orderbag_lbs_img=new JLabel(img_order);
 		
