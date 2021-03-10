@@ -1,6 +1,5 @@
 package inandout;
 
-import inandout.MenuSelect.*;
 import inandout.MenuSelect;
 import java.awt.Color;
 import java.awt.Container;
@@ -219,16 +218,16 @@ public class Option extends JFrame{
 	                  for(int i=0;i<3;i++) {
 	                     rdio[i]=(JRadioButton)ab;
 	                     if(rdio[i].isSelected()) {
-	                        if(rdio[0].isSelected()) {
+	                        if(rdio[0].isSelected()&&jb2.isSelected()) {
 	                           MenuSelect.Orderlist_ta.setText("\n"+"COLD(포장)"+" ");
 	                        }
-	                        else if(rdio[1].isSelected()) {
+	                        else if(rdio[1].isSelected()&&jb2.isSelected()) {
 	                           MenuSelect.Orderlist_ta.setText("\n"+"COLD(매장)"+" ");
 	                        }
-	                        else if(rdio[2].isSelected()) {
+	                        else if(rdio[2].isSelected()&&jb2.isSelected()) {
 	                           MenuSelect.Orderlist_ta.setText("\n"+"HOT(포장)"+" ");
 	                        }
-	                        else if(rdio[3].isSelected()) {
+	                        else if(rdio[3].isSelected()&&jb2.isSelected()) {
 	                              MenuSelect.Orderlist_ta.setText("\n"+"HOT(매장)"+" ");
 	                        }
 	                     

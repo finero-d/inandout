@@ -35,7 +35,7 @@ public class MenuSelect extends JPanel{
 		
 		Title.setSize(1000,100);
 		Title.setLocation(0, 0);
-		Title.setBackground(Color.red);
+		Title.setBackground(new Color(152, 59, 67));
 		Title.setLayout(null);
 		
 		Menubar.setSize(1000,100);
@@ -50,19 +50,19 @@ public class MenuSelect extends JPanel{
 		
 		Orderbag.setSize(300, 1000);
 		Orderbag.setLocation(700, 200);
-		Orderbag.setBackground(Color.red);
+		Orderbag.setBackground(new Color(152, 59, 67));
 		Orderbag.setLayout(null);
 		
 		Orderlist.setSize(245, 560);
 		Orderlist.setLocation(20, 100);
-		Orderlist.setBackground(Color.red);
+		Orderlist.setBackground(new Color(152, 59, 67));
 		Orderlist.setLayout(new BorderLayout(10,15));
 		
 		Font font=new Font("Bernard MT", Font.BOLD, 15);
 		Font fonts=new Font("Bernard MT", Font.BOLD, 20);
 	
 		JLabel lbs[]=new JLabel[2];
-		String messege_lb[]= {"주문하실 매뉴를 선택해주세요","장바구니"};
+		String messege_lb[]= {"주문하실 메뉴를 선택해주세요","장바구니"};
 		for(int i=0;i<lbs.length;i++) {
 			lbs[i]=new JLabel(messege_lb[i]);
 			lbs[i].setForeground(Color.white);
@@ -93,7 +93,7 @@ public class MenuSelect extends JPanel{
 		Orderbag_lbs_img.setBounds(80, 30, 50, 50);
 		
 		buttons[0].setBounds(700, 20, 120, 50);
-		buttons[0].setBackground(Color.red);
+		buttons[0].setBackground(new Color(152, 59, 67));
 		buttons[0].setForeground(Color.white);
 		
 		buttons[1].setBounds(100, 20, 120, 50);
@@ -103,11 +103,11 @@ public class MenuSelect extends JPanel{
 		buttons[2].setBackground(Color.white);
 		
 		buttons[3].setBounds(90, 680, 120, 50);
-		buttons[3].setBackground(Color.red);
+		buttons[3].setBackground(new Color(152, 59, 67));
 		buttons[3].setForeground(Color.white);
 		
 		buttons[4].setBounds(90, 740, 120, 50);	
-		buttons[4].setBackground(Color.red);
+		buttons[4].setBackground(new Color(152, 59, 67));
 		buttons[4].setForeground(Color.white);
 		
 		Title.add(lbs[0]);
