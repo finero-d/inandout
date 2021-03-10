@@ -215,19 +215,19 @@ public class Option extends JFrame{
 	               Enumeration<AbstractButton> enums = grp.getElements();               
 	               while(enums.hasMoreElements()) {
 	                  AbstractButton ab=enums.nextElement();
-	                  for(int i=0;i<3;i++) {
+	                  for(int i=0;i<4;i++) {
 	                     rdio[i]=(JRadioButton)ab;
 	                     if(rdio[i].isSelected()) {
-	                        if(rdio[0].isSelected()&&jb2.isSelected()) {
+	                        if(rdio[0].isSelected()) {
 	                           MenuSelect.Orderlist_ta.setText("\n"+"COLD(포장)"+" ");
 	                        }
-	                        else if(rdio[1].isSelected()&&jb2.isSelected()) {
+	                        else if(rdio[1].isSelected()) {
 	                           MenuSelect.Orderlist_ta.setText("\n"+"COLD(매장)"+" ");
 	                        }
-	                        else if(rdio[2].isSelected()&&jb2.isSelected()) {
+	                        else if(rdio[2].isSelected()) {
 	                           MenuSelect.Orderlist_ta.setText("\n"+"HOT(포장)"+" ");
 	                        }
-	                        else if(rdio[3].isSelected()&&jb2.isSelected()) {
+	                        else if(rdio[3].isSelected()) {
 	                              MenuSelect.Orderlist_ta.setText("\n"+"HOT(매장)"+" ");
 	                        }
 	                     
