@@ -175,7 +175,5 @@ public class MenuSelect extends JPanel{
 		add(Menubar);
 		add(Select);
 		add(Orderbag);
-				
 	}
-
 }

@@ -86,35 +86,35 @@ public class Option extends JFrame{
 	      
 	      
 	      
-	       ImageIcon cold_d=new ImageIcon("C:/Users/성수/Desktop/공차/콜드 포장.png");
+	       ImageIcon cold_d=new ImageIcon("img/cold_d.png");
 	       JLabel img1=new JLabel(cold_d);
-	       ImageIcon cold_m=new ImageIcon("C:/Users/성수/Desktop/공차/콜드매장.png");
+	       ImageIcon cold_m=new ImageIcon("img/cold_m.png");
 	       JLabel img2=new JLabel(cold_m);
-	       ImageIcon hot_d=new ImageIcon("C:/Users/성수/Desktop/공차//핫(포장).png");
+	       ImageIcon hot_d=new ImageIcon("img/hot_d.png");
 	       JLabel img3=new JLabel(hot_d);
-	       ImageIcon hot_m=new ImageIcon("C:/Users/성수/Desktop/공차/핫(매장).png");
+	       ImageIcon hot_m=new ImageIcon("img/hot_m.png");
 	       JLabel img4=new JLabel(hot_m);       
-	       ImageIcon ice_r=new ImageIcon("C:/Users/성수/Desktop/공차/regular ice.png");
+	       ImageIcon ice_r=new ImageIcon("img/ice_r.png");
 	       JLabel img5=new JLabel(ice_r);
-	       ImageIcon ice_f=new ImageIcon("C:/Users/성수/Desktop/공차/full ice.png");
+	       ImageIcon ice_f=new ImageIcon("img/ice_f.png");
 	       JLabel img6=new JLabel(ice_f);
-	       ImageIcon ice_l=new ImageIcon("C:/Users/성수/Desktop/공차/less ice.png");
+	       ImageIcon ice_l=new ImageIcon("img/ice_l.png");
 	       JLabel img7=new JLabel(ice_l);
-	       ImageIcon p50=new ImageIcon("C:/Users/성수/Desktop/공차/50.png");
+	       ImageIcon p50=new ImageIcon("img/p50.png");
 	       JLabel img8=new JLabel(p50);
-	       ImageIcon p100=new ImageIcon("C:/Users/성수/Desktop/공차/100.png");
+	       ImageIcon p100=new ImageIcon("img/p100.png");
 	       JLabel img9=new JLabel(p100);
-	       ImageIcon p30=new ImageIcon("C:/Users/성수/Desktop/공차/30.png");
+	       ImageIcon p30=new ImageIcon("img/p30.png");
 	       JLabel img10=new JLabel(p30);
-	       ImageIcon p70=new ImageIcon("C:/Users/성수/Desktop/공차/70.png");
+	       ImageIcon p70=new ImageIcon("img/p70.png");
 	       JLabel img11=new JLabel(p70);
-	       ImageIcon pearl=new ImageIcon("C:/Users/성수/Desktop/공차/펄.png");
+	       ImageIcon pearl=new ImageIcon("img/pearl.png");
 	       JLabel img12=new JLabel(pearl);
-	       ImageIcon milkform=new ImageIcon("C:/Users/성수/Desktop/공차/밀크폼.png");
+	       ImageIcon milkform=new ImageIcon("img/milkform.png");
 	       JLabel img13=new JLabel(milkform);
-	       ImageIcon coconut=new ImageIcon("C:/Users/성수/Desktop/공차/코코넛.png");
+	       ImageIcon coconut=new ImageIcon("img/coconut.png");
 	       JLabel img14=new JLabel(coconut);
-	       ImageIcon aloe=new ImageIcon("C:/Users/성수/Desktop/공차/알로에.png");
+	       ImageIcon aloe=new ImageIcon("img/aloe.png");
 	       JLabel img15=new JLabel(aloe);
 	       
 	       
@@ -311,10 +311,4 @@ public class Option extends JFrame{
 	      setVisible(true);      
 	      
 	   }    
-	      
-	   public static void main(String[] args) {
-	      new Option();      
-	      
-	   }
-
 	}
