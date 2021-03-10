@@ -24,8 +24,8 @@ public class Milktea extends JPanel{
 		black.setBounds(0,0,200,250);
 		black.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				menu = "black";
 		    	new Option();
-		    	menu = "black";
 		    }
 		});
 		      
@@ -35,8 +35,8 @@ public class Milktea extends JPanel{
 		taro.setBounds(350,0,200,250);
 		taro.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				new Option();
 				menu = "taro";
+				new Option();
 		    }
 		});
 		      
@@ -46,8 +46,8 @@ public class Milktea extends JPanel{
 		oolong.setBounds(0,333,200,250);
 		oolong.addActionListener(new ActionListener() {
 		    public void actionPerformed(ActionEvent e) {
-		    	new Option();
 		    	menu = "oolong";
+		    	new Option();
 		    }
 		});
 		      
@@ -57,8 +57,8 @@ public class Milktea extends JPanel{
 		berry.setBounds(350,333,200,250);
 		berry.addActionListener(new ActionListener() {
 		    public void actionPerformed(ActionEvent e) {
-		    	new Option();	  
 		    	menu = "berry";
+		    	new Option();	  
 		    }
 		});
 		      
@@ -68,8 +68,8 @@ public class Milktea extends JPanel{
 		earlgrey.setBounds(0,666,200,250);
 		earlgrey.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				new Option();	  
 				menu = "earlgrey";
+				new Option();	  
 			}
 		});
 		      
@@ -79,8 +79,8 @@ public class Milktea extends JPanel{
 		jasmin.setBounds(350,666,200,250);
 		jasmin.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				new Option();	  
 				menu = "jasmin";
+				new Option();	  
 			}
 		});
 	}
