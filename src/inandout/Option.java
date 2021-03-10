@@ -20,8 +20,8 @@ import javax.swing.JRadioButton;
 
 
 
-public class Gong extends JFrame{   
-   Gong(){
+public class Option extends JFrame{   
+   Option(){
       Container c=getContentPane();
       c.setLayout(null);      
       
@@ -271,7 +271,7 @@ public class Gong extends JFrame{
    }    
       
    public static void main(String[] args) {
-      new Gong();      
+      new Option();      
       
    }
 

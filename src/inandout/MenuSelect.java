@@ -2,6 +2,7 @@ package inandout;
 import inandout.Structure;
 import inandout.Home;
 import inandout.Milktea;
+import inandout.Smoothie;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
@@ -144,10 +145,10 @@ public class MenuSelect extends JPanel{
 		
 		buttons[2].addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				/*Select.removeAll();
-				Select.add(); //스무디
+				Select.removeAll();
+				Select.add(new Smoothie()); //스무디
 				Select.revalidate();
-				Select.repaint();*/
+				Select.repaint();
 			}
 		});
 		
