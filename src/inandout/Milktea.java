@@ -15,74 +15,80 @@ public class Milktea extends JPanel{
 	public static String menu = null;
 	Milktea(){
 		setLayout(null);
-		setBackground(Color.white);
-		setSize(700,1000);
-		      
-		JButton black=new JButton();
-		black.setIcon(new ImageIcon("img/black2.jpg"));
-		add(black);
-		black.setBounds(0,0,200,250);
-		black.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				menu = "black";
-		    	new Option();
-		    }
-		});
-		      
-		JButton taro=new JButton();
-		taro.setIcon(new ImageIcon("img/taro2.jpg"));
-		add(taro);
-		taro.setBounds(350,0,200,250);
-		taro.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				menu = "taro";
-				new Option();
-		    }
-		});
-		      
-		JButton oolong=new JButton();
-		oolong.setIcon(new ImageIcon("img/oolong2.jpg"));
-		add(oolong);
-		oolong.setBounds(0,333,200,250);
-		oolong.addActionListener(new ActionListener() {
-		    public void actionPerformed(ActionEvent e) {
-		    	menu = "oolong";
-		    	new Option();
-		    }
-		});
-		      
-		JButton berry=new JButton();
-		berry.setIcon(new ImageIcon("img/berry2.jpg"));
-		add(berry);
-		berry.setBounds(350,333,200,250);
-		berry.addActionListener(new ActionListener() {
-		    public void actionPerformed(ActionEvent e) {
-		    	menu = "berry";
-		    	new Option();	  
-		    }
-		});
-		      
-		JButton earlgrey=new JButton();
-		earlgrey.setIcon(new ImageIcon("img/earlgrey2.jpg"));
-		add(earlgrey);
-		earlgrey.setBounds(0,666,200,250);
-		earlgrey.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				menu = "earlgrey";
-				new Option();	  
-			}
-		});
-		      
-		JButton jasmin=new JButton();
-		jasmin.setIcon(new ImageIcon("img/jasmin2.jpg"));
-		add(jasmin);
-		jasmin.setBounds(350,666,200,250);
-		jasmin.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				menu = "jasmin";
-				new Option();	  
-			}
-		});
+	      setBackground(Color.white);
+	      setSize(700,1000);
+	            
+	      JButton black=new JButton();
+	      black.setIcon(new ImageIcon("img/black.jpg"));
+	      add(black);
+	      black.setBounds(0,0,233,330);
+	      black.setBorderPainted(false);
+	      black.addActionListener(new ActionListener() {
+	         public void actionPerformed(ActionEvent e) {
+	            menu = "black";
+	             new Option();
+	          }
+	      });
+	            
+	      JButton taro=new JButton();
+	      taro.setIcon(new ImageIcon("img/taro.jpg"));
+	      add(taro);
+	      taro.setBounds(233,0,233,330);
+	      taro.setBorderPainted(false);
+	      taro.addActionListener(new ActionListener() {
+	         public void actionPerformed(ActionEvent e) {
+	            menu = "taro";
+	            new Option();
+	          }
+	      });
+	            
+	      JButton oolong=new JButton();
+	      oolong.setIcon(new ImageIcon("img/oolong.jpg"));
+	      add(oolong);
+	      oolong.setBounds(466,0,233,330);
+	      oolong.setBorderPainted(false);
+	      oolong.addActionListener(new ActionListener() {
+	          public void actionPerformed(ActionEvent e) {
+	             menu = "oolong";
+	             new Option();
+	          }
+	      });
+	            
+	      JButton berry=new JButton();
+	      berry.setIcon(new ImageIcon("img/berry.jpg"));
+	      add(berry);
+	      berry.setBounds(0,330,233,330);
+	      berry.setBorderPainted(false);
+	      berry.addActionListener(new ActionListener() {
+	          public void actionPerformed(ActionEvent e) {
+	             menu = "berry";
+	             new Option();     
+	          }
+	      });
+	            
+	      JButton earlgrey=new JButton();
+	      earlgrey.setIcon(new ImageIcon("img/earlgrey.jpg"));
+	      add(earlgrey);
+	      earlgrey.setBounds(233,330,233,330);
+	      earlgrey.setBorderPainted(false);
+	      earlgrey.addActionListener(new ActionListener() {
+	         public void actionPerformed(ActionEvent e) {
+	            menu = "earlgrey";
+	            new Option();     
+	         }
+	      });
+	            
+	      JButton jasmin=new JButton();
+	      jasmin.setIcon(new ImageIcon("img/jasmin.jpg"));
+	      add(jasmin);
+	      jasmin.setBounds(466, 330, 233, 330);
+	      jasmin.setBorderPainted(false);
+	      jasmin.addActionListener(new ActionListener() {
+	         public void actionPerformed(ActionEvent e) {
+	            menu = "jasmin";
+	            new Option();     
+	         }
+	      });
 	}
 }
 

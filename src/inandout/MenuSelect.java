@@ -3,6 +3,7 @@ import inandout.Structure;
 import inandout.Home;
 import inandout.Milktea;
 import inandout.Smoothie;
+import inandout.결제하기;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
@@ -22,6 +23,7 @@ import javax.swing.JTextArea;
 public class MenuSelect extends JPanel{
 	
 	static TextArea Orderlist_ta=new TextArea(10,20);
+	
 	MenuSelect(){
 		setSize(1000, 1200);
 		setLayout(null);
@@ -138,7 +140,7 @@ public class MenuSelect extends JPanel{
 		buttons[1].addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				Select.removeAll();
-				Select.add(new Milktea()); //밀크티
+				Select.add(new Milktea());
 				Select.revalidate();
 				Select.repaint();			
 			}
@@ -147,7 +149,7 @@ public class MenuSelect extends JPanel{
 		buttons[2].addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				Select.removeAll();
-				Select.add(new Smoothie()); //스무디
+				Select.add(new Smoothie());
 				Select.revalidate();
 				Select.repaint();
 			}
@@ -157,9 +159,9 @@ public class MenuSelect extends JPanel{
 			public void actionPerformed(ActionEvent e) {
 				int r=JOptionPane.showConfirmDialog 
 					(null,"선택한 매뉴로 결제를 진행하시겠습까?","알림", JOptionPane.YES_NO_OPTION);
-				 /*if(r==JOptionPane.YES_OPTION) {
-					 Structure.getter();
-				 }*/			
+				 if(r==JOptionPane.YES_OPTION) {
+					 Structure.getter(new 결제하기());
+				 }			
 			}
 		});
 		
@@ -168,6 +170,7 @@ public class MenuSelect extends JPanel{
 				Orderlist_ta.setText("");
 				JOptionPane.showMessageDialog
 			    (null, "주문이 취소됐습니다", "알림", JOptionPane.INFORMATION_MESSAGE);
+		
 			}
 		});
 		

@@ -6,6 +6,8 @@ import java.awt.Container;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.ItemEvent;
+import java.awt.event.ItemListener;
 import java.util.Enumeration;
 
 import javax.swing.AbstractButton;
@@ -69,10 +71,10 @@ public class Option extends JFrame{
 	      JLabel lb4=new JLabel("당도");
 	      JLabel lb5=new JLabel("토핑");
 	      Font f=new Font("Aharoni 굵게",Font.BOLD,25);
-	      Font f1=new Font("Aharoni 굵게",Font.BOLD,50);
+	      Font f1=new Font("Aharoni 굵게",Font.BOLD,40);
 	      
 	      lb1.setFont(f1);
-	      lb1.setForeground(Color.red);
+	      lb1.setForeground(new Color(152, 59, 67));
 	      lb2.setFont(f);
 	      lb3.setFont(f);
 	      lb4.setFont(f);
@@ -83,7 +85,6 @@ public class Option extends JFrame{
 	      lb3.setBounds(0,280, 150,50 );
 	      lb4.setBounds(0,460, 150,50 );
 	      lb5.setBounds(0,640, 150,50 );
-	      
 	      
 	      
 	       ImageIcon cold_d=new ImageIcon("img/cold_d.png");
@@ -153,14 +154,15 @@ public class Option extends JFrame{
 	         rdio2[i].setBackground(Color.white);
 	         c.add(rdio2[i]);         
 	         }   
+	       
 	      ButtonGroup grp=new ButtonGroup();
 	      ButtonGroup grp1=new ButtonGroup();
 	      ButtonGroup grp2=new ButtonGroup();      
 	         grp.add(rdio[0]);
 	         grp.add(rdio[1]);      
-	          grp.add(rdio[2]);
-	          grp.add(rdio[3]);
-	          grp1.add(rdio1[0]);      
+	         grp.add(rdio[2]);
+	         grp.add(rdio[3]);
+	         grp1.add(rdio1[0]);      
 	         grp1.add(rdio1[1]);
 	         grp1.add(rdio1[2]);
 	         grp2.add(rdio2[0]);
@@ -183,10 +185,6 @@ public class Option extends JFrame{
 	       rdio2[2].setBounds(480,510,20,20);
 	       rdio2[3].setBounds(660,510,20,20);
 	       
-	       /*rdio[0].setSelected(true);
-	       rdio[4].setSelected(true);
-	       rdio[7].setSelected(true);*/
-	       
 	       JCheckBox []jch=new JCheckBox[4];
 	       for(int i=0;i<4;i++) {
 	          jch[i]=new JCheckBox();
@@ -199,17 +197,29 @@ public class Option extends JFrame{
 	       jch[2].setBounds(480,690,20,20);
 	       jch[3].setBounds(660,690,20,20);
 	       
-	       JButton jb1=new JButton("이전");
-	       JButton jb2=new JButton("다음");
+	       JButton jb1=new JButton("취소");
+	       JButton jb2=new JButton("메뉴담기");
+	       
+	       Font font=new Font("Bernard MT", Font.BOLD, 15);
 	       
 	       jb1.setBounds(200,850,150,50);
+	       jb1.setBackground(new Color(152, 59, 67));
+	       jb1.setForeground(Color.white);
+	       jb1.setFont(font);
+	       
 	       jb2.setBounds(400,850,150,50);
+	       jb2.setBackground(new Color(152, 59, 67));
+	       jb2.setForeground(Color.white);
+	       jb2.setFont(font);
 	       
 	       jb1.addActionListener(new ActionListener() {         
 	         public void actionPerformed(ActionEvent e) {
 	            System.exit(0);            
 	         }
 	      });
+	  
+	       String gettxt= MenuSelect.Orderlist_ta.getText();	              
+	       
 	       jb2.addActionListener(new ActionListener() {         
 	            public void actionPerformed(ActionEvent e) {               
 	               Enumeration<AbstractButton> enums = grp.getElements();               
@@ -218,53 +228,20 @@ public class Option extends JFrame{
 	                  for(int i=0;i<4;i++) {
 	                     rdio[i]=(JRadioButton)ab;
 	                     if(rdio[i].isSelected()) {
-	                        if(rdio[0].isSelected()) {
-	                           MenuSelect.Orderlist_ta.setText("\n"+"COLD(포장)"+" ");
-	                        }
-	                        else if(rdio[1].isSelected()) {
-	                           MenuSelect.Orderlist_ta.setText("\n"+"COLD(매장)"+" ");
-	                        }
-	                        else if(rdio[2].isSelected()) {
-	                           MenuSelect.Orderlist_ta.setText("\n"+"HOT(포장)"+" ");
-	                        }
-	                        else if(rdio[3].isSelected()) {
-	                              MenuSelect.Orderlist_ta.setText("\n"+"HOT(매장)"+" ");
-	                        }
-	                     
 	                        Enumeration<AbstractButton> enums1 = grp1.getElements();               
 	                        while(enums1.hasMoreElements()) {
 	                           AbstractButton ab1=enums1.nextElement();
 	                           for(int j=0;j<3;j++) {
 	                              rdio1[j]=(JRadioButton)ab1;
 	                              if(rdio1[j].isSelected()) {
-	                                 /*if(rdio1[0].isSelected()) {
-	                                    Menuselect.Orderlist_ta.setText("Regular Ice"+" ");
-	                                 }
-	                                 if(rdio1[1].isSelected()) {
-	                                    Menuselect.Orderlist_ta.setText("Full Ice"+" ");
-	                                 }
-	                                 if(rdio1[2].isSelected()) {
-	                                    Menuselect.Orderlist_ta.setText("Less Ice"+" ");
-	                                 }*/
 	                                 Enumeration<AbstractButton> enums2 = grp2.getElements();               
 	                                 while(enums2.hasMoreElements()) {
 	                                    AbstractButton ab2=enums2.nextElement();
 	                                    for(int k=0;k<4;k++) {
 	                                       rdio2[k]=(JRadioButton)ab2;
-	                                       if(rdio2[k].isSelected()) {   
-	                                          /*if(rdio2[0].isSelected()) {
-	                                             Menuselect.Orderlist_ta.setText("50%"+" ");
-	                                          }
-	                                          if(rdio2[1].isSelected()) {
-	                                             Menuselect.Orderlist_ta.setText("100%"+" ");
-	                                          }
-	                                          if(rdio2[2].isSelected()) {
-	                                             Menuselect.Orderlist_ta.setText("30%"+" ");
-	                                          }
-	                                          if(rdio2[3].isSelected()) {
-	                                                Menuselect.Orderlist_ta.setText("70%"+" ");
-	                                          }*/
-	                                          setVisible(false);;
+	                                       if(rdio2[k].isSelected()) { 
+	                                    	  MenuSelect.Orderlist_ta.setText(gettxt+Milktea.menu+"\n");
+	                                          setVisible(false);
 	                                       }         
 	                                    }   
 	                                 }            
@@ -273,10 +250,8 @@ public class Option extends JFrame{
 	                           }   
 	                         }            
 	                     }
-	                              }   
-	            }            
-	               JOptionPane.showMessageDialog(null, "메뉴 선택해주세요");
-	               
+	                   }   
+	            }            	               
 	               
 	          }         
 	      });

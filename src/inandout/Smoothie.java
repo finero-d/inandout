@@ -17,6 +17,7 @@ public class Smoothie extends JPanel{
 	   mango.setIcon(new ImageIcon("img/mango.jpg"));
 	   add(mango);
 	   mango.setBounds(0,0,233,330);
+	   mango.setBorderPainted(false);
 	   mango.addActionListener(new ActionListener() {
 		   public void actionPerformed(ActionEvent e) {
 			   Milktea.menu = "mango";
@@ -28,6 +29,7 @@ public class Smoothie extends JPanel{
 	   grape.setIcon(new ImageIcon("img/grape.jpg"));
 	   add(grape);
 	   grape.setBounds(233,0,233,330);
+	   grape.setBorderPainted(false);
 	   grape.addActionListener(new ActionListener() {
 		   public void actionPerformed(ActionEvent e) {
 			   Milktea.menu = "grape";
@@ -39,6 +41,7 @@ public class Smoothie extends JPanel{
 	   greentea.setIcon(new ImageIcon("img/greentea.jpg"));
 	   add(greentea);
 	   greentea.setBounds(466,0,233,330);
+	   greentea.setBorderPainted(false);
 	   greentea.addActionListener(new ActionListener() {
 		   public void actionPerformed(ActionEvent e) {
 			   Milktea.menu = "greentea";
@@ -50,6 +53,7 @@ public class Smoothie extends JPanel{
 	   cheese.setIcon(new ImageIcon("img/cheese.jpg"));
 	   add(cheese);
 	   cheese.setBounds(0,330,233,330);
+	   cheese.setBorderPainted(false);
 	   cheese.addActionListener(new ActionListener() {
 		   public void actionPerformed(ActionEvent e) {
 			   Milktea.menu = "cheese";
@@ -61,6 +65,7 @@ public class Smoothie extends JPanel{
 	   yogurt.setIcon(new ImageIcon("img/yogurt.jpg"));
 	   add(yogurt);
 	   yogurt.setBounds(233,330,233,330);
+	   yogurt.setBorderPainted(false);
 	   yogurt.addActionListener(new ActionListener() {
 		   public void actionPerformed(ActionEvent e) {
 			   Milktea.menu = "yogurt";
@@ -72,6 +77,7 @@ public class Smoothie extends JPanel{
 	   cookie.setIcon(new ImageIcon("img/cookie.jpg"));
 	   add(cookie);
 	   cookie.setBounds(466, 330, 233, 330);
+	   cookie.setBorderPainted(false);
 	   cookie.addActionListener(new ActionListener() {
 		   public void actionPerformed(ActionEvent e) {
 			   Milktea.menu = "cookie";
