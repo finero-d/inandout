@@ -29,10 +29,6 @@ public class Eqrtest02 {
 			int yogurt = 1;
 			int cookie = 1;
 			int price = 640000;
-//			String que = "insert into orderlist values("
-//			+no+","+black+","+taro+","+oolong+","+berry+","+earlgrey
-//			+","+jasmin+","+mango+","+grape+","+greentea+","+cheese
-//			+","+yogurt+","+cookie+",to_char(sysdate, 'YYYY/MM/DD'),to_char(sysdate, 'hh24:mi:ss'),"+price+")";
 			String que = "insert into orderlist values("
 		    +no+","+black+","+taro+","+oolong+","+berry+","+earlgrey
 		    +","+jasmin+","+mango+","+grape+","+greentea+","+cheese
