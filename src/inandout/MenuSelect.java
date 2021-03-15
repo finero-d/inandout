@@ -157,11 +157,18 @@ public class MenuSelect extends JPanel{
 		
 		buttons[3].addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				int r=JOptionPane.showConfirmDialog 
-					(null,"선택한 매뉴로 결제를 진행하시겠습까?","알림", JOptionPane.YES_NO_OPTION);
-				 if(r==JOptionPane.YES_OPTION) {
-					 Structure.getter(new 결제하기());
-				 }			
+				if(Orderlist_ta!=null) {
+				   int r=JOptionPane.showConfirmDialog 
+							(null,"선택한 매뉴로 결제를 진행하시겠습까?","알림", JOptionPane.YES_NO_OPTION);
+						 if(r==JOptionPane.YES_OPTION) {
+							 Structure.getter(new 결제하기());
+						 }
+				}
+				else {
+					JOptionPane.showMessageDialog
+				    (null, "선택하신 주문내역이 없습니다.", "알림", JOptionPane.WARNING_MESSAGE);
+				}
+				
 			}
 		});
 		

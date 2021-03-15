@@ -218,7 +218,8 @@ public class Option extends JFrame{
 	         }
 	      });
 	  
-	       String gettxt= MenuSelect.Orderlist_ta.getText();	              
+	       String gettxt= MenuSelect.Orderlist_ta.getText();	  
+	       String[] order=gettxt.split("\n");
 	       
 	       jb2.addActionListener(new ActionListener() {         
 	            public void actionPerformed(ActionEvent e) {               

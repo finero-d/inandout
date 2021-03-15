@@ -22,11 +22,13 @@ public class Home extends JPanel {
 		ImageIcon img=new ImageIcon("img/main.png");
 		JLabel label=new JLabel(img);
 		JButton button=new JButton("주문하기");
+		JButton sys=new JButton("관리자");
 		
 		Font font=new Font("Bernard MT", Font.BOLD, 20);
 		
 		add(label);
 		add(button);
+		add(sys);
 		
 		label.setSize(1000,800);
 		label.setLocation(0, 0);
@@ -37,9 +39,22 @@ public class Home extends JPanel {
 		button.setBackground(Color.white);
 		button.setBorderPainted(false);
 		
+		sys.setSize(200, 100);
+	    sys.setLocation(800, 900);
+	    sys.setFont(font);
+	    sys.setBackground(Color.white);
+	    sys.setBorderPainted(false);
+
+		
 		button.addActionListener(new ActionListener() { 
 			public void actionPerformed(ActionEvent e) {
 				Structure.getter(new MenuSelect());	
+			}
+		});
+		
+		sys.addActionListener(new ActionListener() { 
+			public void actionPerformed(ActionEvent e) {
+					
 			}
 		});
 	}
