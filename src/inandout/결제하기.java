@@ -71,9 +71,9 @@ public class 결제하기 extends JPanel {
       JLabel orderlist[]=new JLabel[or.length];
       
       JPanel order=new JPanel();
-      order.setBounds(150, 120, 500, 50);
+      order.setBounds(150, 120, 500, 100);
       order.setBackground(Color.white);
-      order.setLayout(new GridLayout(or.length,4));
+      order.setLayout(new GridLayout(or.length,4,0,20));
       
       add(order);
       
@@ -84,9 +84,9 @@ public class 결제하기 extends JPanel {
       }
        
       JPanel order1=new JPanel();
-      order1.setBounds(500, 120, 150, 50);
+      order1.setBounds(500, 120, 150, 100);
       order1.setBackground(Color.white);
-      order1.setLayout(new GridLayout(or.length,3,0,10));
+      order1.setLayout(new GridLayout(or.length,3,0,20));
       add(order1);
       
       JButton plus[]=new JButton[or.length];
@@ -149,42 +149,62 @@ public class 결제하기 extends JPanel {
                if(pluss==plus[2]) {
                   int co=Integer.parseInt(count[2].getText());
                   count[2].setText(Integer.toString(co+1));
+                  sum++;
+                  money.setText((sum*5000)+"");
                }
                if(pluss==plus[3]) {
                   int co=Integer.parseInt(count[3].getText());
                   count[3].setText(Integer.toString(co+1));
+                  sum++;
+                  money.setText((sum*5000)+"");
                }
                if(pluss==plus[4]) {
                   int co=Integer.parseInt(count[4].getText());
                   count[4].setText(Integer.toString(co+1));
+                  sum++;
+                  money.setText((sum*5000)+"");
                }
                if(pluss==plus[5]) {
                   int co=Integer.parseInt(count[5].getText());
                   count[5].setText(Integer.toString(co+1));
+                  sum++;
+                  money.setText((sum*5000)+"");
                }
                if(pluss==plus[6]) {
                   int co=Integer.parseInt(count[6].getText());
                   count[6].setText(Integer.toString(co+1));
+                  sum++;
+                  money.setText((sum*5000)+"");
                }
                if(pluss==plus[7]) {
                   int co=Integer.parseInt(count[7].getText());
                   count[7].setText(Integer.toString(co+1));
+                  sum++;
+                  money.setText((sum*5000)+"");
                }
                if(pluss==plus[8]) {
                   int co=Integer.parseInt(count[8].getText());
                   count[8].setText(Integer.toString(co+1));
+                  sum++;
+                  money.setText((sum*5000)+"");
                }
                if(pluss==plus[9]) {
                   int co=Integer.parseInt(count[9].getText());
                   count[9].setText(Integer.toString(co+1));
+                  sum++;
+                  money.setText((sum*5000)+"");
                }
                if(pluss==plus[10]) {
                   int co=Integer.parseInt(count[10].getText());
                   count[10].setText(Integer.toString(co+1));
+                  sum++;
+                  money.setText((sum*5000)+"");
                }
                if(pluss==plus[11]) {
                   int co=Integer.parseInt(count[11].getText());
                   count[11].setText(Integer.toString(co+1));
+                  sum++;
+                  money.setText((sum*5000)+"");
                }
                
             }
@@ -208,42 +228,62 @@ public class 결제하기 extends JPanel {
                if(minuss==minus[2]&& Integer.parseInt(count[2].getText())>1) {
                   int co=Integer.parseInt(count[2].getText());
                   count[2].setText(Integer.toString(co-1));
+                  sum--;
+                  money.setText((sum*5000)+"");
                }
                if(minuss==minus[3]&& Integer.parseInt(count[3].getText())>1) {
                   int co=Integer.parseInt(count[3].getText());
                   count[3].setText(Integer.toString(co-1));
+                  sum--;
+                  money.setText((sum*5000)+"");
                }
                if(minuss==minus[4]&& Integer.parseInt(count[4].getText())>1) {
                   int co=Integer.parseInt(count[4].getText());
                   count[4].setText(Integer.toString(co-1));
+                  sum--;
+                  money.setText((sum*5000)+"");
                }
                if(minuss==minus[5]&& Integer.parseInt(count[5].getText())>1) {
                   int co=Integer.parseInt(count[5].getText());
                   count[5].setText(Integer.toString(co-1));
+                  sum--;
+                  money.setText((sum*5000)+"");
                }
                if(minuss==minus[6]&& Integer.parseInt(count[6].getText())>1) {
                   int co=Integer.parseInt(count[6].getText());
                   count[6].setText(Integer.toString(co-1));
+                  sum--;
+                  money.setText((sum*5000)+"");
                }
                if(minuss==minus[7]&& Integer.parseInt(count[7].getText())>1) {
                   int co=Integer.parseInt(count[7].getText());
                   count[7].setText(Integer.toString(co-1));
+                  sum--;
+                  money.setText((sum*5000)+"");
                }
                if(minuss==minus[8]&& Integer.parseInt(count[8].getText())>1) {
                   int co=Integer.parseInt(count[8].getText());
                   count[8].setText(Integer.toString(co-1));
+                  sum--;
+                  money.setText((sum*5000)+"");
                }
                if(minuss==minus[9]&& Integer.parseInt(count[9].getText())>1) {
                   int co=Integer.parseInt(count[9].getText());
                   count[9].setText(Integer.toString(co-1));
+                  sum--;
+                  money.setText((sum*5000)+"");
                }
                if(minuss==minus[10]&& Integer.parseInt(count[10].getText())>1) {
                   int co=Integer.parseInt(count[10].getText());
                   count[10].setText(Integer.toString(co-1));
+                  sum--;
+                  money.setText((sum*5000)+"");
                }
                if(minuss==minus[11]&& Integer.parseInt(count[11].getText())>1) {
                   int co=Integer.parseInt(count[11].getText());
                   count[11].setText(Integer.toString(co-1));
+                  sum--;
+                  money.setText((sum*5000)+"");
                   
                }
                
@@ -267,4 +307,3 @@ public class 결제하기 extends JPanel {
         
    }
    }
-
