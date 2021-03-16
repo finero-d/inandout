@@ -2,6 +2,7 @@ package inandout;
 
 import inandout.Structure;
 import inandout.MenuSelect;
+import inandout.Sys;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
@@ -54,7 +55,7 @@ public class Home extends JPanel {
 		
 		sys.addActionListener(new ActionListener() { 
 			public void actionPerformed(ActionEvent e) {
-					
+				//Structure.getter(new Sys());		
 			}
 		});
 	}
