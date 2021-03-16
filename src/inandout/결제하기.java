@@ -78,7 +78,9 @@ public class 결제하기 extends JPanel {
       add(order);
       
       for(int i=0;i<or.length;i++) {  
-         orderlist[i]=new JLabel(or[i]);   
+         orderlist[i]=new JLabel(or[i]);
+         System.out.println(orderlist[i].getText());
+         
          order.add(orderlist[i]);
          orderlist[i].setFont(new Font("Bernard MT", Font.BOLD, 30));
       }
