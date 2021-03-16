@@ -20,7 +20,7 @@ public class Smoothie extends JPanel{
 	   mango.setBorderPainted(false);
 	   mango.addActionListener(new ActionListener() {
 		   public void actionPerformed(ActionEvent e) {
-			   Milktea.menu = "mango";
+			   Milktea.menu = "망고 스무디";
 			   new Option();
 		   }
 	   });
@@ -32,7 +32,7 @@ public class Smoothie extends JPanel{
 	   grape.setBorderPainted(false);
 	   grape.addActionListener(new ActionListener() {
 		   public void actionPerformed(ActionEvent e) {
-			   Milktea.menu = "grape";
+			   Milktea.menu = "청포도 스무디";
 			   new Option();
 		   }
 	   });
@@ -44,7 +44,7 @@ public class Smoothie extends JPanel{
 	   greentea.setBorderPainted(false);
 	   greentea.addActionListener(new ActionListener() {
 		   public void actionPerformed(ActionEvent e) {
-			   Milktea.menu = "greentea";
+			   Milktea.menu = "제주 그린티 스무디";
 			   new Option();
 		   }
 	   });
@@ -56,7 +56,7 @@ public class Smoothie extends JPanel{
 	   cheese.setBorderPainted(false);
 	   cheese.addActionListener(new ActionListener() {
 		   public void actionPerformed(ActionEvent e) {
-			   Milktea.menu = "cheese";
+			   Milktea.menu = "치즈폼 딥초코 스무디";
 			   new Option();
 		   }
 	   });
@@ -68,7 +68,7 @@ public class Smoothie extends JPanel{
 	   yogurt.setBorderPainted(false);
 	   yogurt.addActionListener(new ActionListener() {
 		   public void actionPerformed(ActionEvent e) {
-			   Milktea.menu = "yogurt";
+			   Milktea.menu = "딸기 요구르트 크러쉬";
 			   new Option();
 		   }
 	   });
@@ -80,7 +80,7 @@ public class Smoothie extends JPanel{
 	   cookie.setBorderPainted(false);
 	   cookie.addActionListener(new ActionListener() {
 		   public void actionPerformed(ActionEvent e) {
-			   Milktea.menu = "cookie";
+			   Milktea.menu = "초코 쿠앤크 스무디";
 			   new Option();
 		   }
 	   });

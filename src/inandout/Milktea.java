@@ -25,7 +25,7 @@ public class Milktea extends JPanel{
 	      black.setBorderPainted(false);
 	      black.addActionListener(new ActionListener() {
 	         public void actionPerformed(ActionEvent e) {
-	            menu = "black";
+	            menu = "블랙 밀크티";
 	             new Option();
 	          }
 	      });
@@ -37,7 +37,7 @@ public class Milktea extends JPanel{
 	      taro.setBorderPainted(false);
 	      taro.addActionListener(new ActionListener() {
 	         public void actionPerformed(ActionEvent e) {
-	            menu = "taro";
+	            menu = "타로 밀크티";
 	            new Option();
 	          }
 	      });
@@ -49,7 +49,7 @@ public class Milktea extends JPanel{
 	      oolong.setBorderPainted(false);
 	      oolong.addActionListener(new ActionListener() {
 	          public void actionPerformed(ActionEvent e) {
-	             menu = "oolong";
+	             menu = "우롱 밀크티";
 	             new Option();
 	          }
 	      });
@@ -61,7 +61,7 @@ public class Milktea extends JPanel{
 	      berry.setBorderPainted(false);
 	      berry.addActionListener(new ActionListener() {
 	          public void actionPerformed(ActionEvent e) {
-	             menu = "berry";
+	             menu = "딸기 쥬얼리 밀크티";
 	             new Option();     
 	          }
 	      });
@@ -73,7 +73,7 @@ public class Milktea extends JPanel{
 	      earlgrey.setBorderPainted(false);
 	      earlgrey.addActionListener(new ActionListener() {
 	         public void actionPerformed(ActionEvent e) {
-	            menu = "earlgrey";
+	            menu = "얼그레이 밀크티";
 	            new Option();     
 	         }
 	      });
@@ -85,7 +85,7 @@ public class Milktea extends JPanel{
 	      jasmin.setBorderPainted(false);
 	      jasmin.addActionListener(new ActionListener() {
 	         public void actionPerformed(ActionEvent e) {
-	            menu = "jasmin";
+	            menu = "자스민 그린 밀크티";
 	            new Option();     
 	         }
 	      });
