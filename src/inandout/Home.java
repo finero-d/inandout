@@ -2,11 +2,11 @@ package inandout;
 
 import inandout.Structure;
 import inandout.MenuSelect;
-import inandout.Sys;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.sql.SQLException;
 
 import javax.imageio.stream.ImageInputStreamImpl;
 import javax.swing.ImageIcon;
@@ -55,7 +55,7 @@ public class Home extends JPanel {
 		
 		sys.addActionListener(new ActionListener() { 
 			public void actionPerformed(ActionEvent e) {
-				//Structure.getter(new Sys());		
+				//new Sys();
 			}
 		});
 	}
