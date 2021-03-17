@@ -80,7 +80,6 @@ public class 결제하기 extends JPanel {
              ResultSet r = null;
              
              try {
-                int no = 10;
                 int black=0;
                 int taro=0;
                 int oolong=0;
@@ -141,10 +140,10 @@ public class 결제하기 extends JPanel {
           price=Integer.parseInt(결제하기.money.getText());
        }
                 
-                String que = "insert into orderlist values("
-                 +no+","+black+","+taro+","+oolong+","+berry+","+earlgrey
-                 +","+jasmin+","+mango+","+grape+","+greentea+","+cheese
-                 +","+yogurt+","+cookie+","+price+")";
+                String que = "insert into orderlist values(ol_seq.nextval,+"
+                +black+","+taro+","+oolong+","+berry+","+earlgrey
+                +","+jasmin+","+mango+","+grape+","+greentea+","+cheese
+                +","+yogurt+","+cookie+",sysdate,"+price+")";
                 
                 conn = Jdbc.get();
                 pstm=conn.prepareStatement(que);
