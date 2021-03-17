@@ -36,12 +36,11 @@ public class Eqrtest01 {
 				int yogurt = r.getInt(12);
 				int cookie = r.getInt(13);
 				java.sql.Date date = r.getDate(14);
-				java.sql.Date time = r.getDate(15);
 				int price = r.getInt(16);
 				
 				System.out.println(no + " " + black + " " + taro + " " + oolong + " " + berry + " " + 
 				earlgrey + " " + jasmin + " " + mango + " " + grape + " " + greentea + " " + cheese + " " + 
-						yogurt + " " + cookie + " " + date + " " + time + " " + price);
+						yogurt + " " + cookie + " " + date + " " + price);
 			}
 		} catch (Exception e) {
 			e.printStackTrace();

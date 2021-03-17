@@ -55,7 +55,7 @@ public class Home extends JPanel {
 		
 		sys.addActionListener(new ActionListener() { 
 			public void actionPerformed(ActionEvent e) {
-				//new Sys();
+				new Sys();
 			}
 		});
 	}

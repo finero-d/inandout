@@ -10,7 +10,7 @@ public class Jdbc {
   try {
    String id="system";
    String pw="ooracle";
-   String url="jdbc:oracle:thin:@192.168.0.56:1521/xe";
+   String url="jdbc:oracle:thin:@192.168.15.51:1521/xe";
    //JDBC 드라이버를 로딩하는 코드
    
    //문자열로 준 클래스 이름이나 인터페이스 이름을 객체로 리턴가능
