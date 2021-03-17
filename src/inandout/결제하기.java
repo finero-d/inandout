@@ -141,7 +141,7 @@ public class 결제하기 extends JPanel {
           price=Integer.parseInt(결제하기.money.getText());
        }
                 
-                String que = "insert into orderlist1 values("
+                String que = "insert into orderlist values("
                  +no+","+black+","+taro+","+oolong+","+berry+","+earlgrey
                  +","+jasmin+","+mango+","+grape+","+greentea+","+cheese
                  +","+yogurt+","+cookie+","+price+")";
