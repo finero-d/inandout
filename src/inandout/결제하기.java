@@ -28,9 +28,9 @@ import javax.swing.JTextField;
 public class 결제하기 extends JPanel {
    
    private JButton 다음,취소;
-   static String or[]=MenuSelect.Orderlist_ta.getText().split("\n");
-   static JLabel orderlist[]=new JLabel[or.length];
-   static JTextField count[]=new JTextField[or.length];
+   String or[]=MenuSelect.Orderlist_ta.getText().split("\n");
+   JLabel orderlist[]=new JLabel[or.length];
+   JTextField count[]=new JTextField[or.length];
    static JLabel money=new JLabel();
    int sum=0;
    
@@ -95,44 +95,44 @@ public class 결제하기 extends JPanel {
                 int price=0;
                 
                 
-            for(int i=0;i<결제하기.or.length;i++) {
-              if(결제하기.orderlist[i].getText()!=null) {
+            for(int i=0;i<or.length;i++) {
+              if(orderlist[i].getText()!=null) {
               if(orderlist[i].getText().equals("블랙 밀크티")) {
-                black=Integer.parseInt(결제하기.count[i].getText());
+                black=Integer.parseInt(count[i].getText());
                 System.out.println(black);
              }
-             else if(결제하기.orderlist[i].getText()==("타로 밀크티")) {
-                taro=Integer.parseInt(결제하기.count[i].getText());
+             else if(orderlist[i].getText()==("타로 밀크티")) {
+                taro=Integer.parseInt(count[i].getText());
              }
-             else if(결제하기.orderlist[i].getText()==("우롱 밀크티")) {
-                oolong=Integer.parseInt(결제하기.count[i].getText());
+             else if(orderlist[i].getText()==("우롱 밀크티")) {
+                oolong=Integer.parseInt(count[i].getText());
              }
-             else if(결제하기.orderlist[i].getText()==("딸기 쥬얼리 밀크티")) {
-                berry=Integer.parseInt(결제하기.count[i].getText());
+             else if(orderlist[i].getText()==("딸기 쥬얼리 밀크티")) {
+                berry=Integer.parseInt(count[i].getText());
              }
-             else if(결제하기.orderlist[i].getText()==("얼그레이 밀크티")) {
-                earlgrey=Integer.parseInt(결제하기.count[i].getText());
+             else if(orderlist[i].getText()==("얼그레이 밀크티")) {
+                earlgrey=Integer.parseInt(count[i].getText());
              }
-             else if(결제하기.orderlist[i].getText()==("자스민 밀크티")) {
-                jasmin=Integer.parseInt(결제하기.count[i].getText());
+             else if(orderlist[i].getText()==("자스민 밀크티")) {
+                jasmin=Integer.parseInt(count[i].getText());
              }
-             else if(결제하기.orderlist[i].getText()==("망고 스무디")) {
-                mango=Integer.parseInt(결제하기.count[i].getText());
+             else if(orderlist[i].getText()==("망고 스무디")) {
+                mango=Integer.parseInt(count[i].getText());
              }
-             else if(결제하기.orderlist[i].getText()==("청포도 스무디")) {
-                grape=Integer.parseInt(결제하기.count[i].getText());
+             else if(orderlist[i].getText()==("청포도 스무디")) {
+                grape=Integer.parseInt(count[i].getText());
              }
-             else if(결제하기.orderlist[i].getText()==("제주 그린티 스무디")) {
-                greentea=Integer.parseInt(결제하기.count[i].getText());
+             else if(orderlist[i].getText()==("제주 그린티 스무디")) {
+                greentea=Integer.parseInt(count[i].getText());
              }
-             else if(결제하기.orderlist[i].getText()==("치즈폼 딥초코 스무디")) {
-                cheese=Integer.parseInt(결제하기.count[i].getText());
+             else if(orderlist[i].getText()==("치즈폼 딥초코 스무디")) {
+                cheese=Integer.parseInt(count[i].getText());
              }
-             else if(결제하기.orderlist[i].getText()==("딸기 요구르트 크러쉬")) {
-                yogurt=Integer.parseInt(결제하기.count[i].getText());
+             else if(orderlist[i].getText()==("딸기 요구르트 크러쉬")) {
+                yogurt=Integer.parseInt(count[i].getText());
              }
-             else if(결제하기.orderlist[i].getText()==("초코 쿠앤크 스무디")) {
-                cookie=Integer.parseInt(결제하기.count[i].getText());
+             else if(orderlist[i].getText()==("초코 쿠앤크 스무디")) {
+                cookie=Integer.parseInt(count[i].getText());
              }          
           }         
        }

@@ -190,9 +190,11 @@ public class MenuSelect extends JPanel{
 			public void actionPerformed(ActionEvent e) {
 				if(Orderlist_ta!=null) {
 				   int r=JOptionPane.showConfirmDialog 
-							(null,"선택한 매뉴로 결제를 진행하시겠습까?","알림", JOptionPane.YES_NO_OPTION);
+							(null,"선택한 메뉴로 결제를 진행하시겠습까?","알림", JOptionPane.YES_NO_OPTION);
 						 if(r==JOptionPane.YES_OPTION) {
 							 Structure.getter(new 결제하기());
+							 Orderlist_ta.setText("");
+							 결제하기.money.setText("");
 						 }
 				}
 				else {
